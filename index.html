@@ -41,18 +41,20 @@ body {
 }
 
  /* Centering the flowers */
-        .flowers {
+ .flowers {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             transform: scale(0.7); /* Adjust size for smaller screens */
+            margin-top: 5vh; /* This pushes the flowers higher */
         }
 
-        /* Adjust flower size for phones */
+        /* Adjust flower size and position for phones */
         @media (max-width: 600px) {
             .flowers {
                 transform: scale(0.5); /* Shrink flowers further on smaller screens */
+                margin-top: 15vh; /* Push the flowers higher on phone screens */
             }
         }
 
@@ -1015,7 +1017,7 @@ body {
 /* Happy Birthday text styling */
 .birthday-message {
   position: absolute;
-  top: 30%;
+  top: 20%;
   /* Adjust positioning */
   width: 100%;
   text-align: center;
@@ -1029,13 +1031,13 @@ body {
   /* Glowing effect */
   z-index: 100;
   /* Make sure it stays on top */
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
 }
 
 /* Love message under "Happy Birthday" */
 .love-message {
   position: absolute;
-  top: 45%;
+  top: 30%;
   /* Adjust positioning */
   width: 100%;
   text-align: center;
