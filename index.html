@@ -40,23 +40,6 @@ body {
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), linear-gradient(90deg, #00fffa, #f0f0f0);
 }
 
- /* Centering the flowers */
- .flowers {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            transform: scale(0.7); /* Adjust size for smaller screens */
-            margin-top: 5vh; /* This pushes the flowers higher */
-        }
-
-        /* Adjust flower size and position for phones */
-        @media (max-width: 600px) {
-            .flowers {
-                transform: scale(0.5); /* Shrink flowers further on smaller screens */
-                margin-top: 15vh; /* Push the flowers higher on phone screens */
-            }
-        }
 
 
 .flowers {
@@ -1017,27 +1000,7 @@ body {
 /* Happy Birthday text styling */
 .birthday-message {
   position: absolute;
-  top: 20%;
-  /* Adjust positioning */
-  width: 100%;
-  text-align: center;
-  font-size: 4em;
-  /* Adjust text size */
-  font-family: "Baloo 2", cursive;
-  /* Bubbly text font */
-  color: white;
-  /* White text color */
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-  /* Glowing effect */
-  z-index: 100;
-  /* Make sure it stays on top */
-  animation: fadeIn 3s ease-in-out;
-}
-
-/* Love message under "Happy Birthday" */
-.love-message {
-  position: absolute;
-  top: 30%;
+  top: 45%;
   /* Adjust positioning */
   width: 100%;
   text-align: center;
@@ -1051,7 +1014,27 @@ body {
   /* Glowing effect */
   z-index: 100;
   /* Make sure it stays on top */
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 4s ease-in-out;
+}
+
+/* Love message under "Happy Birthday" */
+.love-message {
+  position: absolute;
+  top: 60%;
+  /* Adjust positioning */
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  /* Adjust text size */
+  font-family: "Baloo 2", cursive;
+  /* Bubbly text font */
+  color: white;
+  /* White text color */
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  /* Glowing effect */
+  z-index: 100;
+  /* Make sure it stays on top */
+  animation: fadeIn 4s ease-in-out;
 }
 
 /* Animation for text appearance */
